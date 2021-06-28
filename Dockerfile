@@ -1,4 +1,3 @@
-FROM busybox
-COPY /hello /
-RUN cat /hello
+FROM nginx:latest
+COPY html/index.html /usr/share/nginx/html/ 
 
